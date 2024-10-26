@@ -18,7 +18,7 @@ on post-fs
 symlink /dev/block/dm-1 /dev/block/mapper/product
 symlink /dev/block/dm-2 /dev/block/mapper/vendor
 symlink /dev/block/dm-3 /dev/block/mapper/system
-symlink /dev/block/dm-0 /dev/block/mapper/system_ext
+#symlink /dev/block/dm-0 /dev/block/mapper/system_ext
 
 on property:crypto.ready=1 && property:ro.crypto.state=encrypted
     start teei_daemon
